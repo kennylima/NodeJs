@@ -1,4 +1,3 @@
-# NodeJs
-Repositorio de NodeJs
+Projetos em Node.js
 
-01-Modulo Interno
+Fundamentos Node.js -Módulo Interno -Core Modulo -Modulo Externo -Para rodar o modulo externo é necessário rodar o npm install para que as dependências sejam instaladas.
