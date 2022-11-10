@@ -4,7 +4,7 @@ const app = express()
 const porta = 3000 //Porta para acessar o servidor
 const basePath = path.join(__dirname, `Templates`)
 
-const checarAutenticacao = function(req, res, next){
+/*const checarAutenticacao = function(req, res, next){
     req.authStatus = true
 
     if (req.authStatus){
@@ -16,7 +16,13 @@ const checarAutenticacao = function(req, res, next){
     }
 }
 
-app.use(checarAutenticacao)
+app.use(checarAutenticacao)*/
+
+app.get('/produto/:id', (requisicao, resposta) => {
+    const idProduto = requisicao.params.id
+    console.log("Resgatei o produto de ID: "+idProduto)
+})
+
 
 app.get('/', (requisicao, resposta) => {
     resposta.sendFile(`${basePath}/index.html`)
